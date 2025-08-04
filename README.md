@@ -29,7 +29,15 @@ By default, this plugin will remove all files inside webpack's `output.path` dir
 
 ## Installation
 
-`npm install --save-dev clean-webpack-plugin`
+Add it to your `package.json`:
+
+```json
+{
+    "devDependencies": {
+        "@webvowl/clean-webpack-plugin": "git://github.com/WebVOWL/clean-webpack-plugin.git#v4.0.1"
+    }
+}
+```
 
 ## Usage
 
