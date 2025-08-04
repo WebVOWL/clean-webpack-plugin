@@ -1,4 +1,4 @@
-import { sync as delSync } from 'del';
+import { deleteSync } from 'del';
 import path from 'path';
 import { Compilation, Compiler, Stats } from 'webpack';
 
@@ -279,7 +279,7 @@ class CleanWebpackPlugin {
 
     removeFiles(patterns: string[]) {
         try {
-            const deleted = delSync(patterns, {
+            const deleted = deleteSync(patterns, {
                 force: this.dangerouslyAllowCleanPatternsOutsideProject,
                 // Change context to build directory
                 cwd: this.outputPath,
